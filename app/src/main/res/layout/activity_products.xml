@@ -12,4 +12,25 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="63dp" />
+
+    <ListView
+        android:id="@+id/productList"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"/>
+
+    <Button
+        android:layout_width="137dp"
+        android:layout_height="63dp"
+        android:id="@+id/btn_app"
+        android:layout_alignParentStart="true"
+        android:text="Book an Appoint"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="0dp" />
+
 </RelativeLayout>

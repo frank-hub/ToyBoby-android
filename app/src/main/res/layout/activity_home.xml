@@ -59,7 +59,7 @@
         android:layout_marginLeft="67dp"
         android:layout_marginTop="175dp"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="date"
         android:hint="Price"
         />
 
@@ -79,4 +79,5 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="163dp"
         tools:layout_editor_absoluteY="63dp" />
+
 </RelativeLayout>

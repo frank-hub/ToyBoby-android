@@ -1,17 +1,21 @@
 package com.example.frankline.toyboby;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Home extends AppCompatActivity {
 
@@ -26,6 +30,10 @@ public class Home extends AppCompatActivity {
         nameInput = (EditText) findViewById(R.id.name);
         descriptionInput = (EditText) findViewById(R.id.description);
         priceInput = (EditText) findViewById(R.id.price);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy"); //"HH:mm:ss"
+        String currentTime = sdf.format(new Date());
+
+//        priceInput.setText(currentTime);
         insertBtn = (Button) findViewById(R.id.submit);
 
 

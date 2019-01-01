@@ -19,7 +19,6 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         String sql = "CREATE TABLE PRODUCTS (_id INTEGER PRIMARY KEY AUTOINCREMENT,NAME TEXT,DESCRIPTION TEXT,PRICE REAL)";
         db.execSQL(sql);
 
-
     }
 
     public void insertData(String name , String description , double price,SQLiteDatabase database){
