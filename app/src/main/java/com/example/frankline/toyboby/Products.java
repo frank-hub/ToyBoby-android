@@ -65,5 +65,14 @@ public class Products extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Button welcomeBtn = findViewById(R.id.welcome);
+        welcomeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent welcome = new Intent(Products.this,MainActivity.class);
+                startActivity(welcome);
+            }
+        });
     }
 }
